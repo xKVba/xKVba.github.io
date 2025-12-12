@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   width="286"
+   height="94"
+   viewBox="0 0 286 94"
+   version="1.1"
+   sodipodi:docname="sticks.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.8601399"
+     inkscape:cx="143"
+     inkscape:cy="47.019021"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #0f0f0f;
+      }
+
+      .cls-2 {
+        fill: #121212;
+      }
+
+      .cls-3 {
+        fill: #141414;
+      }
+
+      .cls-4 {
+        fill: #f0f0f0;
+      }
+
+      .cls-5 {
+        fill: #ededed;
+      }
+
+      .cls-6 {
+        fill: #ebebeb;
+      }
+    </style>
+  </defs>
+  <g
+     id="g3">
+    <g
+       id="g2">
+      <path
+         class="cls-1"
+         d="M47,92.5A45.5,45.5,0,1,1,92.5,47,45.54,45.54,0,0,1,47,92.5Z"
+         id="path1"
+         style="fill:#d60000;fill-opacity:1" />
+      <path
+         class="cls-2"
+         d="M47,3A44,44,0,1,1,3,47,44,44,0,0,1,47,3m0-3A47,47,0,1,0,94,47,46.95,46.95,0,0,0,47,0Z"
+         id="path2"
+         style="fill:#000000;fill-opacity:1" />
+    </g>
+    <circle
+       class="cls-3"
+       cx="47"
+       cy="47"
+       r="27.3"
+       id="circle2"
+       style="fill:#a30000;fill-opacity:1" />
+  </g>
+  <g
+     id="g7">
+    <g
+       id="g4">
+      <path
+         class="cls-4"
+         d="M239,92.5A45.5,45.5,0,1,1,284.5,47,45.54,45.54,0,0,1,239,92.5Z"
+         id="path3"
+         style="fill:#ff9999;fill-opacity:1" />
+      <path
+         class="cls-5"
+         d="M239,3a44,44,0,1,1-44,44A44,44,0,0,1,239,3m0-3a47,47,0,1,0,47,47A46.95,46.95,0,0,0,239,0Z"
+         id="path4"
+         style="fill:#adadad;fill-opacity:1" />
+    </g>
+    <circle
+       class="cls-6"
+       cx="239"
+       cy="47"
+       r="27.3"
+       id="circle4"
+       style="fill:#ffcccc;fill-opacity:1" />
+    <g
+       id="g6" />
+  </g>
+  <g
+     id="g11">
+    <g
+       id="g8">
+      <path
+         class="cls-4"
+         d="M143,92.5A45.5,45.5,0,1,1,188.5,47,45.54,45.54,0,0,1,143,92.5Z"
+         id="path7"
+         style="fill:#ff9999;fill-opacity:1" />
+      <path
+         class="cls-5"
+         d="M143,3A44,44,0,1,1,99,47,44,44,0,0,1,143,3m0-3a47,47,0,1,0,47,47A46.95,46.95,0,0,0,143,0Z"
+         id="path8"
+         style="fill:#adadad;fill-opacity:1" />
+    </g>
+    <circle
+       class="cls-6"
+       cx="143"
+       cy="47"
+       r="27.3"
+       id="circle8"
+       style="fill:#ffcccc;fill-opacity:1" />
+    <g
+       id="g10" />
+  </g>
+</svg>

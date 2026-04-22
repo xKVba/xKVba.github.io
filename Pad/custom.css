@@ -1,0 +1,65 @@
+/* ===================== NEON THEME (SAFE) ===================== */
+
+/* TRIGGERS */
+.ds4 .trigger.pressed {
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff2a1a);
+}
+
+/* BUMPERS */
+.ds4 .bumper.pressed {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff6a00);
+}
+
+/* ABXY */
+.ds4 .button.pressed {
+  background-position-y: 55px;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff2a1a)
+    drop-shadow(0 0 20px #ff6a00);
+}
+
+/* DPAD */
+.ds4 .face.pressed {
+  background-position-y: 52px;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 10px #ff6a00);
+}
+
+/* STICKS */
+.ds4 .stick.pressed {
+  filter:
+    drop-shadow(0 0 8px #ff1900)
+    drop-shadow(0 0 16px #ff2a1a);
+}
+
+/* START / BACK */
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff6a00);
+}
+
+/* TOUCHPAD */
+.ds4 .touchpad.pressed {
+  background: rgba(255, 42, 26, 0.15);
+  box-shadow:
+    0 0 20px rgba(255, 25, 0, 0.4),
+    0 0 40px rgba(255, 106, 0, 0.2);
+}
+
+/* META */
+.ds4 .meta.pressed {
+  background: url(ps4-assets/meta.svg) no-repeat center;
+  filter:
+    drop-shadow(0 0 8px #ff2a1a)
+    drop-shadow(0 0 16px #ff1900);
+}

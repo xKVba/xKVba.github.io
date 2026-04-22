@@ -24,7 +24,6 @@
     height: 90px;
     position: absolute;
     left: 109px;
-    z-index: 5;
 }
 
 .ds4 .trigger {
@@ -33,8 +32,15 @@
     background: url(trigger.svg);
     opacity: 0;
     position: relative;
+}
 
-    filter: brightness(1);
+/* kolorowa warstwa (NAPRAWA WHITE FLASH) */
+.ds4 .trigger::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    pointer-events: none;
 }
 
 .ds4 .trigger.left {
@@ -46,15 +52,19 @@
     background-position-x: 99px;
 }
 
+/* PRESS STATE */
 .ds4 .trigger.pressed {
     opacity: 1;
-    filter:
-      brightness(0.8)
-      saturate(1.3)
-      contrast(1.2)
-      hue-rotate(-8deg)
-      drop-shadow(0 0 5px #ff2a1a)
-      drop-shadow(0 0 12px #ff6a00);
+    filter: none;
+}
+
+/* REAL COLOR LAYER */
+.ds4 .trigger.pressed::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 42, 26, 0.85),
+        rgba(255, 106, 0, 0.65)
+    );
 }
 
 /* ================= BUMPERS ================= */

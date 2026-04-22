@@ -1,0 +1,267 @@
+/*BEGIN PS4 Controller Styling*/
+.controller.ds4 {
+  background: url(base.svg);
+  height: 598px;
+  width: 806px;
+}
+
+/* ===================== DISCONNECTED ===================== */
+.ds4.disconnected {
+  background: url(disconnected.svg);
+}
+
+.ds4.disconnected div {
+  display: none;
+}
+
+/* ===================== TRIGGERS ===================== */
+.ds4 .triggers {
+  width: 588px;
+  height: 90px;
+  position: absolute;
+  left: 109px;
+}
+
+.ds4 .trigger {
+  width: 99px;
+  height: 100%;
+
+  background: linear-gradient(180deg, #ff1900, #ff6a00);
+
+  -webkit-mask: url(trigger.svg) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask: url(trigger.svg) no-repeat;
+  mask-size: 100% 100%;
+
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+.ds4 .trigger.pressed {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff2a1a)
+    drop-shadow(0 0 20px #ff6a00);
+}
+
+.ds4 .trigger.left {
+  float: left;
+}
+
+.ds4 .trigger.right {
+  float: right;
+}
+
+/* ===================== BUMPERS ===================== */
+.ds4 .bumpers {
+  position: absolute;
+  width: 588px;
+  height: 23px;
+  left: 109px;
+  top: 94px;
+}
+
+.ds4 .bumper {
+  width: 99px;
+  height: 23px;
+
+  background: linear-gradient(90deg, #ff1900, #ff6a00);
+
+  -webkit-mask: url(bumper.svg) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask: url(bumper.svg) no-repeat;
+  mask-size: 100% 100%;
+
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+.ds4 .bumper.pressed {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff2a1a);
+}
+
+.ds4 .bumper.left {
+  float: left;
+}
+
+.ds4 .bumper.right {
+  float: right;
+  transform: rotateY(180deg);
+}
+
+/* ===================== TOUCHPAD ===================== */
+.ds4 .touchpad {
+  width: 262px;
+  height: 151px;
+  position: absolute;
+  left: 272px;
+  top: 122px;
+}
+
+.ds4 .touchpad.pressed {
+  background: rgba(255, 42, 26, 0.15);
+  box-shadow: 0 0 30px rgba(255, 106, 0, 0.4);
+}
+
+/* ===================== META ===================== */
+.ds4 .meta {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 382px;
+  bottom: 216px;
+}
+
+.ds4 .meta.pressed {
+  background: radial-gradient(circle, #ff2a1a, #ff1900);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px #ff2a1a);
+}
+
+/* ===================== START / BACK ===================== */
+.ds4 .arrows {
+  position: absolute;
+  width: 352px;
+  height: 46px;
+  top: 142px;
+  left: 227px;
+}
+
+.ds4 .back,
+.ds4 .start {
+  width: 28px;
+  height: 46px;
+
+  background: linear-gradient(90deg, #ff1900, #ff6a00);
+
+  -webkit-mask: url(start.svg) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask: url(start.svg) no-repeat;
+  mask-size: 100% 100%;
+
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+.ds4 .back {
+  float: left;
+}
+
+.ds4 .start {
+  float: right;
+  transform: rotateY(180deg);
+}
+
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #ff2a1a);
+}
+
+/* ===================== ABXY ===================== */
+.ds4 .abxy {
+  position: absolute;
+  width: 170px;
+  height: 171px;
+  top: 159px;
+  left: 567px;
+}
+
+.ds4 .button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+
+  background: linear-gradient(135deg, #ff1900, #ff6a00);
+
+  -webkit-mask: url(face.svg) no-repeat;
+  -webkit-mask-size: 220px 110px;
+  mask: url(face.svg) no-repeat;
+  mask-size: 220px 110px;
+
+  opacity: 0.25;
+  transition: 0.15s;
+}
+
+.ds4 .button.pressed {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 6px #ff1900)
+    drop-shadow(0 0 12px #ff2a1a)
+    drop-shadow(0 0 20px #ff6a00);
+}
+
+/* sprite positions */
+.ds4 .a { background-position: 0 0; bottom: 0; left: 58px; }
+.ds4 .b { background-position: -57px 0; top: 58px; right: 0; }
+.ds4 .x { background-position: -113px 0; top: 58px; }
+.ds4 .y { background-position: 55px 0; left: 58px; }
+
+/* ===================== STICKS ===================== */
+.ds4 .sticks {
+  position: absolute;
+  width: 361px;
+  height: 105px;
+  top: 308px;
+  left: 228px;
+}
+
+.ds4 .stick {
+  position: absolute;
+  height: 94px;
+  width: 94px;
+
+  background: radial-gradient(circle, #ff2a1a, #0b0b0b);
+  border-radius: 50%;
+
+  opacity: 0.7;
+  transition: 0.15s;
+}
+
+.ds4 .stick.pressed {
+  filter: drop-shadow(0 0 15px #ff2a1a);
+  transform: scale(0.95);
+}
+
+.ds4 .stick.left { top: 0; left: 0; }
+.ds4 .stick.right { top: calc(100% - 105px); left: calc(100% - 105px); }
+
+/* ===================== DPAD ===================== */
+.ds4 .dpad {
+  position: absolute;
+  width: 125px;
+  height: 126px;
+  top: 181px;
+  left: 92px;
+}
+
+.ds4 .face {
+  position: absolute;
+
+  background: linear-gradient(90deg, #ff1900, #ff6a00);
+
+  -webkit-mask: url(dpad.svg) no-repeat;
+  -webkit-mask-size: 156px 104px;
+  mask: url(dpad.svg) no-repeat;
+  mask-size: 156px 104px;
+
+  opacity: 0.25;
+  transition: 0.15s;
+}
+
+.ds4 .face.pressed {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #ff2a1a);
+}
+
+/* directions */
+.ds4 .face.up { width: 36px; height: 52px; left: 44px; top: 0; background-position: -37px 0; }
+.ds4 .face.down { width: 36px; height: 52px; left: 44px; bottom: 0; background-position: 0 0; }
+.ds4 .face.left { width: 52px; height: 36px; top: 45px; left: 0; background-position: 104px 0; }
+.ds4 .face.right { width: 52px; height: 36px; top: 45px; right: 0; background-position: 52px 0; }
+
+/*END*/

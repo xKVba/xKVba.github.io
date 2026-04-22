@@ -3,6 +3,7 @@
     background: url(base.svg);
     height: 598px;
     width: 806px;
+
     filter:
       brightness(0.92)
       contrast(1.08)
@@ -30,6 +31,9 @@
     height: 100%;
     background: url(trigger.svg);
     opacity: 0;
+
+    /* FIX WHITE ISSUE */
+    mix-blend-mode: multiply;
 }
 
 .ds4 .trigger.left {
@@ -44,22 +48,15 @@
 .ds4 .trigger.pressed {
     opacity: 1;
     filter:
-      brightness(0.88)
-      saturate(1.35)
-      hue-rotate(-8deg)
-      contrast(1.15)
+      brightness(0.65)
+      saturate(2)
+      hue-rotate(-12deg)
+      contrast(1.35)
       drop-shadow(0 0 6px #ff2a1a)
       drop-shadow(0 0 14px #ff6a00);
 }
 
 /* ================= BUMPERS ================= */
-.ds4 .bumper {
-    width: 99px;
-    height: 23px;
-    background: url(bumper.svg) no-repeat;
-    opacity: 0;
-}
-
 .ds4 .bumpers {
     position: absolute;
     width: 588px;
@@ -68,15 +65,22 @@
     top: 94px;
 }
 
+.ds4 .bumper {
+    width: 99px;
+    height: 23px;
+    background: url(bumper.svg) no-repeat;
+    opacity: 0;
+}
+
 .ds4 .bumper.pressed {
     opacity: 1;
     filter:
       brightness(0.88)
-      saturate(1.35)
+      saturate(1.4)
       hue-rotate(-8deg)
-      contrast(1.15)
+      contrast(1.2)
       drop-shadow(0 0 6px #ff2a1a)
-      drop-shadow(0 0 14px #ff6a00);
+      drop-shadow(0 0 12px #ff6a00);
 }
 
 .ds4 .bumper.left {
@@ -132,7 +136,7 @@
     left: 227px;
 }
 
-.ds4 .back, 
+.ds4 .back,
 .ds4 .start {
     background: url(start.svg);
     width: 28px;
@@ -140,14 +144,14 @@
     opacity: 0;
 }
 
-.ds4 .back.pressed, 
+.ds4 .back.pressed,
 .ds4 .start.pressed {
     opacity: 1;
     filter:
       brightness(0.88)
-      saturate(1.35)
+      saturate(1.4)
       hue-rotate(-8deg)
-      contrast(1.15)
+      contrast(1.2)
       drop-shadow(0 0 6px #ff2a1a)
       drop-shadow(0 0 14px #ff6a00);
 }
@@ -266,13 +270,13 @@
     position: absolute;
 }
 
-.ds4 .face.up, 
+.ds4 .face.up,
 .ds4 .face.down {
     width: 36px;
     height: 52px;
 }
 
-.ds4 .face.left, 
+.ds4 .face.left,
 .ds4 .face.right {
     width: 52px;
     height: 36px;

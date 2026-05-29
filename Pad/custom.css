@@ -3,8 +3,7 @@
     background: url(base.svg);
     height: 598px;
     width: 806px;
-    position: relative;
-    image-rendering: auto;
+
 }
 
 .ds4.disconnected {

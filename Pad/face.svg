@@ -14,13 +14,13 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview23"
-     pagecolor="#ffffff"
+     pagecolor="#ffb000"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
+     inkscape:deskcolor="#ff6a00"
      inkscape:zoom="3.4850263"
      inkscape:cx="116.4984"
      inkscape:cy="60.401267"
@@ -35,51 +35,51 @@
     <style
        id="style1">
       .cls-1 {
-        fill: #e6e6e6;
+        fill: #ff8a00;
       }
 
       .cls-2 {
-        fill: #f0f0f0;
+        fill: #ffb000;
       }
 
       .cls-3 {
-        fill: #009898;
+        fill: #ff7a00;
       }
 
       .cls-4 {
-        fill: #824e20;
+        fill: #ff3b00;
       }
 
       .cls-5 {
-        fill: #079647;
+        fill: #ffb000;
       }
 
       .cls-6 {
-        fill: #be1e5f;
+        fill: #ff1900;
       }
 
       .cls-7 {
-        fill: #1a1a1a;
+        fill: #15161b;
       }
 
       .cls-8 {
-        fill: #0f0f0f;
+        fill: #08090d;
       }
 
       .cls-9 {
-        fill: #f16667;
+        fill: #ff4a00;
       }
 
       .cls-10 {
-        fill: #7fb1df;
+        fill: #ff9a00;
       }
 
       .cls-11 {
-        fill: #cb79b1;
+        fill: #ff4a00;
       }
 
       .cls-12 {
-        fill: #66c194;
+        fill: #ffb000;
       }
     </style>
   </defs>
@@ -93,18 +93,18 @@
            class="cls-1"
            d="M83.8,111.3A26.25,26.25,0,1,1,110,85.1,26.33,26.33,0,0,1,83.8,111.3Z"
            id="path1"
-           style="fill:#adadad;fill-opacity:1" />
+           style="fill:#e84a00;fill-opacity:1" />
         <path
            class="cls-2"
            d="M83.8,59.8A25.25,25.25,0,1,1,58.5,85.1,25.31,25.31,0,0,1,83.8,59.8m0-2A27.25,27.25,0,1,0,111,85.1,27.31,27.31,0,0,0,83.8,57.8Z"
            id="path2"
-           style="fill:#cccccc;fill-opacity:1" />
+           style="fill:#ff7a00;fill-opacity:1" />
       </g>
       <path
          class="cls-3"
          d="M83.8,66.2a18.9,18.9,0,1,0,18.9,18.9A18.95,18.95,0,0,0,83.8,66.2Zm0,34.9a16,16,0,1,1,16-16A16,16,0,0,1,83.8,101.1Z"
          id="path3"
-         style="fill:#ff5a5a;fill-opacity:1" />
+         style="fill:#ff3b00;fill-opacity:1" />
     </g>
     <g
        id="g6">
@@ -114,18 +114,18 @@
            class="cls-1"
            d="M27.2,111.3A26.2,26.2,0,1,1,53.6,85.1,26.23,26.23,0,0,1,27.2,111.3Z"
            id="path4"
-           style="fill:#adadad;fill-opacity:1" />
+           style="fill:#e84a00;fill-opacity:1" />
         <path
            class="cls-2"
            d="M27.3,59.8A25.25,25.25,0,1,1,2,85.1,25.31,25.31,0,0,1,27.3,59.8m0-2A27.3,27.3,0,1,0,54.6,85.1,27.34,27.34,0,0,0,27.3,57.8Z"
            id="path5"
-           style="fill:#cccccc;fill-opacity:1" />
+           style="fill:#ff7a00;fill-opacity:1" />
       </g>
       <polygon
          class="cls-4"
          points="41.6 72.7 39.6 70.7 27.3 83.1 14.9 70.7 12.9 72.7 25.2 85.1 12.9 97.4 14.9 99.5 27.3 87.1 39.6 99.5 41.6 97.4 29.3 85.1 41.6 72.7"
          id="polygon5"
-         style="fill:#ff5a5a;fill-opacity:1" />
+         style="fill:#ff3b00;fill-opacity:1" />
     </g>
     <g
        id="g8">
@@ -135,18 +135,18 @@
            class="cls-1"
            d="M140.3,111.3A26.25,26.25,0,1,1,166.6,85,26.25,26.25,0,0,1,140.3,111.3Z"
            id="path6"
-           style="fill:#adadad;fill-opacity:1" />
+           style="fill:#e84a00;fill-opacity:1" />
         <path
            class="cls-2"
            d="M140.3,59.8A25.25,25.25,0,1,1,115,85.1a25.31,25.31,0,0,1,25.3-25.3m0-2A27.25,27.25,0,1,0,167.6,85a27.31,27.31,0,0,0-27.3-27.2Z"
            id="path7"
-           style="fill:#cccccc;fill-opacity:1" />
+           style="fill:#ff7a00;fill-opacity:1" />
       </g>
       <path
          class="cls-5"
          d="M151.8,70.7H126V99.3h28.6V70.7Zm0,25.9h-23v-23h23Z"
          id="path8"
-         style="fill:#ff5a5a;fill-opacity:1" />
+         style="fill:#ff3b00;fill-opacity:1" />
     </g>
     <g
        id="g11">
@@ -156,18 +156,18 @@
            class="cls-1"
            d="M196.7,111.3A26.25,26.25,0,1,1,223,85.1,26.33,26.33,0,0,1,196.7,111.3Z"
            id="path9"
-           style="fill:#adadad;fill-opacity:1" />
+           style="fill:#e84a00;fill-opacity:1" />
         <path
            class="cls-2"
            d="M196.8,59.8a25.25,25.25,0,1,1-25.3,25.3,25.31,25.31,0,0,1,25.3-25.3m0-2A27.25,27.25,0,1,0,224,85.1a27.31,27.31,0,0,0-27.2-27.3Z"
            id="path10"
-           style="fill:#cccccc;fill-opacity:1" />
+           style="fill:#ff7a00;fill-opacity:1" />
       </g>
       <path
          class="cls-6"
          d="M212.7,93.1l-16-27.6-16,27.6-1.6,2.8h35.2Zm-15.9,0H184.1l12.7-21.9,12.7,21.9Z"
          id="path11"
-         style="fill:#ff5c5c;fill-opacity:1" />
+         style="fill:#ff3b00;fill-opacity:1" />
     </g>
   </g>
   <g
@@ -185,13 +185,13 @@
            class="cls-8"
            d="M83.8,2A25.25,25.25,0,1,1,58.5,27.3,25.24,25.24,0,0,1,83.8,2m0-2A27.3,27.3,0,1,0,111,27.3,27.34,27.34,0,0,0,83.8,0Z"
            id="path13"
-           style="fill:#333333;fill-opacity:1" />
+           style="fill:#26282d;fill-opacity:1" />
       </g>
       <path
          class="cls-9"
          d="M83.8,8.4a18.9,18.9,0,1,0,18.9,18.9A18.95,18.95,0,0,0,83.8,8.4Zm0,34.9a16,16,0,1,1,16-16A16,16,0,0,1,83.8,43.3Z"
          id="path14"
-         style="fill:#d60000;fill-opacity:1" />
+         style="fill:#a32600;fill-opacity:1" />
     </g>
     <g
        id="g17">
@@ -206,13 +206,13 @@
            class="cls-8"
            d="M27.3,2A25.25,25.25,0,1,1,2,27.3,25.33,25.33,0,0,1,27.3,2m0-2A27.3,27.3,0,1,0,54.6,27.3,27.27,27.27,0,0,0,27.3,0Z"
            id="path16"
-           style="fill:#333333;fill-opacity:1" />
+           style="fill:#26282d;fill-opacity:1" />
       </g>
       <polygon
          class="cls-10"
          points="41.6 14.9 39.6 12.9 27.3 25.2 14.9 12.9 12.9 14.9 25.2 27.2 12.9 39.6 14.9 41.6 27.3 29.3 39.6 41.6 41.6 39.6 29.3 27.2 41.6 14.9"
          id="polygon16"
-         style="fill:#d60000;fill-opacity:1" />
+         style="fill:#a32600;fill-opacity:1" />
     </g>
     <g
        id="g19">
@@ -227,13 +227,13 @@
            class="cls-8"
            d="M140.3,2.7A25.25,25.25,0,1,1,115,27.9,25.33,25.33,0,0,1,140.3,2.7m0-2A27.25,27.25,0,1,0,167.6,28,27.34,27.34,0,0,0,140.3.7Z"
            id="path18"
-           style="fill:#333333;fill-opacity:1" />
+           style="fill:#26282d;fill-opacity:1" />
       </g>
       <path
          class="cls-11"
          d="M151.8,13.5H126V42.1h28.6V13.5Zm0,25.9h-23v-23h23Z"
          id="path19"
-         style="fill:#d60000;fill-opacity:1" />
+         style="fill:#a32600;fill-opacity:1" />
     </g>
     <g
        id="g22">
@@ -248,13 +248,13 @@
            class="cls-8"
            d="M196.8,3.3a25.3,25.3,0,1,1-25.3,25.3A25.33,25.33,0,0,1,196.8,3.3m0-2A27.3,27.3,0,1,0,224,28.6,27.34,27.34,0,0,0,196.8,1.3Z"
            id="path21"
-           style="fill:#333333;fill-opacity:1" />
+           style="fill:#26282d;fill-opacity:1" />
       </g>
       <path
          class="cls-12"
          d="M212.7,36.6,196.7,9l-16,27.6-1.6,2.8h35.2Zm-15.9,0H184.1l12.7-21.9,12.7,21.9Z"
          id="path22"
-         style="fill:#d60000;fill-opacity:1" />
+         style="fill:#a32600;fill-opacity:1" />
     </g>
   </g>
 </svg>

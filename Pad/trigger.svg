@@ -35,11 +35,11 @@
     <style
        id="style1">
       .cls-1 {
-        fill: #ff2a00;
+        fill: #ededed;
       }
 
       .cls-2 {
-        fill: #ff8a00;
+        fill: #f5f5f5;
       }
 
       .cls-3 {

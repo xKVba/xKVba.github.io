@@ -219,58 +219,68 @@
     top: calc(100% - 105px);
     left: calc(100% - 105px);
   }
-  
-  .ds4 .dpad {
-    position: absolute;
-    width: 125px;
-    height: 126px;
-    top: 181px;
-    left: 92px;
-  }
-  
-  .ds4 .face {
-    background: url(dpad.svg);
-    position: absolute;
-  }
-  
-  .ds4 .face.up, .ds4 .face.down {
-    width: 36px;
-    height: 52px;
-  }
-  
-  .ds4 .face.left, .ds4 .face.right {
-    width: 52px;
-    height: 36px;
-  }
-  
-  .ds4 .face.up {
-    left: 44px;
-    top: 0;
-    background-position: -37px 0px;
-  }
-  
-  .ds4 .face.down {
-    left: 44px;
-    bottom: 0;
-    background-position: 0px 0;
-  }
-  
-  .ds4 .face.left {
-    top: 45px;
-    left: 0;
-    background-position: 104px 0;
-  }
-  
-  .ds4 .face.right {
-    top: 45px;
-    right: 0px;
-    background-position: 52px 0;
-  }
-  
-  .ds4 .face.pressed {
-    /* margin-top: 5px; */
-    background-position-y: 52px;
-  }
+
+.ds4 .dpad {
+  position: absolute;
+  width: 125px;
+  height: 126px;
+  top: 181px;
+  left: 92px;
+}
+
+.ds4 .face {
+  background: url(dpad.svg);
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.08s ease;
+}
+
+.ds4 .face.up,
+.ds4 .face.down {
+  width: 36px;
+  height: 52px;
+}
+
+.ds4 .face.left,
+.ds4 .face.right {
+  width: 52px;
+  height: 36px;
+}
+
+.ds4 .face.up {
+  left: 44px;
+  top: 0;
+  background-position: -37px 0px;
+  transform-origin: center bottom;
+}
+
+.ds4 .face.down {
+  left: 44px;
+  bottom: 0;
+  background-position: 0px 0;
+  transform-origin: center top;
+}
+
+.ds4 .face.left {
+  top: 45px;
+  left: 0;
+  background-position: 104px 0;
+  transform-origin: right center;
+}
+
+.ds4 .face.right {
+  top: 45px;
+  right: 0px;
+  background-position: 52px 0;
+  transform-origin: left center;
+}
+
+/* FIX: pressed przykrywa cały stary kształt */
+.ds4 .face.pressed {
+  background-position-y: 52px;
+  z-index: 5;
+  transform: scale(1.08);
+}
   
   .ds4.half {
     margin-top: -300px;

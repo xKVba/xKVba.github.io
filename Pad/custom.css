@@ -1,21 +1,56 @@
-/*BEGIN PS4 Controller Styling*/
+/*BEGIN PS4 Controller Styling - Gaming RGB Orange/Red Theme*/
+
 .controller.ds4 {
     background: url(base.svg);
     height: 598px;
     width: 806px;
 
     filter:
-      brightness(0.92)
-      contrast(1.08)
-      drop-shadow(0 0 14px rgba(255, 42, 26, 0.22));
+      brightness(1.02)
+      contrast(1.14)
+      saturate(1.2)
+      drop-shadow(0 0 12px rgba(255, 25, 0, 0.28))
+      drop-shadow(0 0 28px rgba(255, 106, 0, 0.18));
+
+    animation: padIdleGlow 4.5s ease-in-out infinite;
 }
 
 .ds4.disconnected {
     background: url(disconnected.svg);
+    filter:
+      grayscale(0.18)
+      brightness(0.72)
+      contrast(1.1)
+      drop-shadow(0 0 16px rgba(255, 25, 0, 0.35));
 }
 
-.ds4.disconnected div {
-    display: none;
+.ds4.disconnected div { display: none; }
+
+/* ================= GLOBAL PRESS FX ================= */
+.ds4 .button,
+.ds4 .face,
+.ds4 .bumper,
+.ds4 .trigger,
+.ds4 .stick,
+.ds4 .back,
+.ds4 .start,
+.ds4 .touchpad,
+.ds4 .meta {
+    transition:
+      filter 0.13s ease,
+      opacity 0.13s ease,
+      transform 0.13s cubic-bezier(.22,.9,.3,1),
+      background 0.13s ease,
+      box-shadow 0.13s ease;
+}
+
+.ds4 .button.pressed,
+.ds4 .face.pressed,
+.ds4 .bumper.pressed,
+.ds4 .stick.pressed,
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    transform: scale(0.955);
 }
 
 /* ================= TRIGGERS ================= */
@@ -34,19 +69,16 @@
     position: relative;
 }
 
-/* FIX: stabilny overlay (bez flasha) */
 .ds4 .trigger::after {
     content: "";
     position: absolute;
     inset: 0;
     background: transparent;
     pointer-events: none;
-    transition: background 0.15s ease;
+    transition: background 0.18s ease;
 }
 
-.ds4 .trigger.left {
-    float: left;
-}
+.ds4 .trigger.left { float: left; }
 
 .ds4 .trigger.right {
     float: right;
@@ -55,16 +87,21 @@
 
 .ds4 .trigger.pressed {
     opacity: 1;
-    filter: none;
+    filter:
+      brightness(1.2)
+      contrast(1.18)
+      saturate(1.8)
+      drop-shadow(0 0 8px rgba(255, 25, 0, 0.95))
+      drop-shadow(0 0 18px rgba(255, 106, 0, 0.85))
+      drop-shadow(0 0 32px rgba(255, 176, 0, 0.42));
 }
 
-/* 🔥 płynny neon zamiast „twardego” flasha */
 .ds4 .trigger.pressed::after {
     background: linear-gradient(
         to bottom,
-        rgba(255, 42, 26, 0.75),
-        rgba(255, 106, 0, 0.55),
-        rgba(255, 25, 0, 0.25)
+        rgba(255, 25, 0, 0.40),
+        rgba(255, 106, 0, 0.26),
+        rgba(255, 176, 0, 0.10)
     );
 }
 
@@ -84,24 +121,22 @@
     opacity: 0;
 }
 
-.ds4 .bumper.pressed {
-    opacity: 1;
-    filter:
-      brightness(0.9)
-      saturate(1.5)
-      hue-rotate(-8deg)
-      contrast(1.15)
-      drop-shadow(0 0 8px #ff2a1a)
-      drop-shadow(0 0 16px #ff6a00);
-}
-
-.ds4 .bumper.left {
-    float: left;
-}
+.ds4 .bumper.left { float: left; }
 
 .ds4 .bumper.right {
     float: right;
     transform: rotateY(180deg);
+}
+
+.ds4 .bumper.pressed {
+    opacity: 1;
+    filter:
+      brightness(1.18)
+      saturate(1.85)
+      contrast(1.2)
+      drop-shadow(0 0 7px #ff1900)
+      drop-shadow(0 0 16px #ff6a00)
+      drop-shadow(0 0 30px rgba(255,176,0,0.42));
 }
 
 /* ================= TOUCHPAD ================= */
@@ -111,13 +146,19 @@
     position: absolute;
     left: 272px;
     top: 122px;
+    border-radius: 18px;
 }
 
 .ds4 .touchpad.pressed {
-    background: rgba(255, 42, 26, 0.10);
+    background:
+      radial-gradient(circle at center,
+        rgba(255, 106, 0, 0.20),
+        rgba(255, 42, 26, 0.10) 48%,
+        transparent 72%);
     box-shadow:
-      0 0 20px rgba(255, 25, 0, 0.30),
-      0 0 45px rgba(255, 106, 0, 0.15);
+      inset 0 0 22px rgba(255, 42, 26, 0.32),
+      0 0 16px rgba(255, 25, 0, 0.55),
+      0 0 42px rgba(255, 106, 0, 0.30);
 }
 
 /* ================= META ================= */
@@ -132,11 +173,11 @@
 .ds4 .meta.pressed {
     background: url(ps4-assets/meta.svg) no-repeat center;
     filter:
-      brightness(0.9)
-      saturate(1.5)
-      hue-rotate(-5deg)
-      contrast(1.15)
-      drop-shadow(0 0 12px #ff2a1a);
+      brightness(1.2)
+      saturate(1.8)
+      contrast(1.2)
+      drop-shadow(0 0 9px #ff1900)
+      drop-shadow(0 0 22px #ff6a00);
 }
 
 /* ================= START / OPTIONS ================= */
@@ -156,25 +197,22 @@
     opacity: 0;
 }
 
-.ds4 .back.pressed,
-.ds4 .start.pressed {
-    opacity: 1;
-    filter:
-      brightness(0.9)
-      saturate(1.5)
-      hue-rotate(-8deg)
-      contrast(1.15)
-      drop-shadow(0 0 8px #ff2a1a)
-      drop-shadow(0 0 16px #ff6a00);
-}
-
-.ds4 .back {
-    float: left;
-}
+.ds4 .back { float: left; }
 
 .ds4 .start {
     float: right;
     background-position: 28px 0;
+}
+
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    opacity: 1;
+    filter:
+      brightness(1.18)
+      saturate(1.85)
+      contrast(1.18)
+      drop-shadow(0 0 7px #ff1900)
+      drop-shadow(0 0 16px #ff6a00);
 }
 
 /* ================= ABXY ================= */
@@ -196,35 +234,18 @@
 .ds4 .button.pressed {
     background-position-y: 55px;
     filter:
-      brightness(0.9)
-      saturate(1.5)
-      hue-rotate(-5deg)
-      contrast(1.15)
-      drop-shadow(0 0 8px #ff2a1a)
-      drop-shadow(0 0 18px #ff6a00);
+      brightness(1.22)
+      saturate(1.95)
+      contrast(1.24)
+      drop-shadow(0 0 7px #ff1900)
+      drop-shadow(0 0 16px #ff6a00)
+      drop-shadow(0 0 30px rgba(255,176,0,0.42));
 }
 
-.ds4 .a {
-    background-position: 0 0;
-    bottom: 0;
-    left: 58px;
-}
-
-.ds4 .b {
-    background-position: -57px 0;
-    top: 58px;
-    right: 0px;
-}
-
-.ds4 .x {
-    background-position: -113px 0;
-    top: 58px;
-}
-
-.ds4 .y {
-    background-position: 55px 0;
-    left: 58px;
-}
+.ds4 .a { background-position: 0 0; bottom: 0; left: 58px; }
+.ds4 .b { background-position: -57px 0; top: 58px; right: 0px; }
+.ds4 .x { background-position: -113px 0; top: 58px; }
+.ds4 .y { background-position: 55px 0; left: 58px; }
 
 /* ================= STICKS ================= */
 .ds4 .sticks {
@@ -243,30 +264,20 @@
 }
 
 .ds4 .stick.pressed {
+    transform: scale(0.94);
     filter:
-      brightness(0.9)
-      saturate(1.4)
-      drop-shadow(0 0 8px #ff2a1a)
-      drop-shadow(0 0 18px #ff6a00);
+      brightness(1.18)
+      saturate(1.8)
+      contrast(1.2)
+      drop-shadow(0 0 8px #ff1900)
+      drop-shadow(0 0 18px #ff6a00)
+      drop-shadow(0 0 34px rgba(255,176,0,0.36));
 }
 
-.ds4 .stick.pressed.left {
-    background-position-x: -96px;
-}
-
-.ds4 .stick.pressed.right {
-    background-position-x: -192px;
-}
-
-.ds4 .stick.left {
-    top: 0;
-    left: 0;
-}
-
-.ds4 .stick.right {
-    top: calc(100% - 105px);
-    left: calc(100% - 105px);
-}
+.ds4 .stick.pressed.left { background-position-x: -96px; }
+.ds4 .stick.pressed.right { background-position-x: -192px; }
+.ds4 .stick.left { top: 0; left: 0; }
+.ds4 .stick.right { top: calc(100% - 105px); left: calc(100% - 105px); }
 
 /* ================= DPAD ================= */
 .ds4 .dpad {
@@ -321,16 +332,34 @@
 .ds4 .face.pressed {
     background-position-y: 52px;
     filter:
-      brightness(0.9)
-      saturate(1.5)
-      hue-rotate(-5deg)
-      contrast(1.15)
-      drop-shadow(0 0 8px #ff2a1a)
-      drop-shadow(0 0 16px #ff6a00);
+      brightness(1.2)
+      saturate(1.9)
+      contrast(1.2)
+      drop-shadow(0 0 7px #ff1900)
+      drop-shadow(0 0 16px #ff6a00)
+      drop-shadow(0 0 30px rgba(255,176,0,0.38));
 }
 
-.ds4.half {
-    margin-top: -300px;
+.ds4.half { margin-top: -300px; }
+
+/* ================= ANIMATIONS ================= */
+@keyframes padIdleGlow {
+    0%, 100% {
+        filter:
+          brightness(1.00)
+          contrast(1.14)
+          saturate(1.18)
+          drop-shadow(0 0 12px rgba(255,25,0,0.24))
+          drop-shadow(0 0 28px rgba(255,106,0,0.16));
+    }
+    50% {
+        filter:
+          brightness(1.06)
+          contrast(1.18)
+          saturate(1.28)
+          drop-shadow(0 0 18px rgba(255,25,0,0.38))
+          drop-shadow(0 0 42px rgba(255,106,0,0.26));
+    }
 }
 
 /*END PS4 Controller Styling*/

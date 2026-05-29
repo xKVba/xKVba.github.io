@@ -35,11 +35,11 @@
     <style
        id="style1">
       .cls-1 {
-        fill: #ededed;
+        fill: #ff1900;
       }
 
       .cls-2 {
-        fill: #f5f5f5;
+        fill: #ff6a00;
       }
 
       .cls-3 {
@@ -56,13 +56,13 @@
          d="M199.9,90.8s-32.7-3.2-50.6-3.2S100.9,90,100.9,90s3.1-44.7,4.8-52,7.7-21.3,16.9-27.9S134.6,0,145.4,0,170.8,6.4,180,21.4,199.9,90.8,199.9,90.8Z"
          transform="translate(0.1 0)"
          id="path1"
-         style="fill:#cccccc;fill-opacity:1" />
+         style="fill:#ffb000;fill-opacity:1" />
       <path
          class="cls-2"
          d="M101.4,83.2s26.1-4.4,49-4.4,47.9,4.4,47.9,4.4c1,4.7,1.6,7.6,1.6,7.6s-32.7-3.2-50.6-3.2S100.9,90,100.9,90,101.1,87.3,101.4,83.2Z"
          transform="translate(0.1 0)"
          id="path2"
-         style="fill:#cccccc;fill-opacity:1" />
+         style="fill:#ffb000;fill-opacity:1" />
     </g>
     <g
        class="cls-3"
@@ -86,13 +86,13 @@
          d="M0,90.8s32.7-3.2,50.6-3.2S98.9,90,98.9,90s-3.1-44.7-4.8-52S86.4,16.7,77.2,10.1,65.3,0,54.5,0,29.1,6.4,19.9,21.4,0,90.8,0,90.8Z"
          transform="translate(0.1 0)"
          id="path5"
-         style="fill:#cccccc;fill-opacity:1" />
+         style="fill:#ffb000;fill-opacity:1" />
       <path
          class="cls-2"
          d="M98.4,83.2s-26.1-4.4-49-4.4S1.5,83.2,1.5,83.2c-1,4.7-1.6,7.6-1.6,7.6s32.7-3.2,50.6-3.2S98.9,90,98.9,90,98.8,87.3,98.4,83.2Z"
          transform="translate(0.1 0)"
          id="path6"
-         style="fill:#cccccc;fill-opacity:1" />
+         style="fill:#ffb000;fill-opacity:1" />
     </g>
     <g
        class="cls-3"

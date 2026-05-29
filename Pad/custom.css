@@ -1,46 +1,42 @@
-/*BEGIN PS4 Controller Styling - Orange/Red Painted Theme v3
-  Zachowuje oryginalny model i sprite'y SVG:
-  - face/dpad: pressed nadal używa background-position-y
-  - sticks: pressed nadal używa background-position-x
-  - trigger/bumper/start: opacity pokazuje stan naciśnięcia
-*/
+/*BEGIN PS4 Controller Styling - Cartoon Orange/Red Theme*/
 .controller.ds4 {
     background: url(base.svg);
     height: 598px;
     width: 806px;
-    /*    margin-left: -403px;
-        margin-top: -280px;*/
-  
-
-    /* bez glow — tylko lekko malowany/kontrastowy wygląd */
-    filter: brightness(0.96) contrast(1.08) saturate(1.12);
-    animation: paintBreath 7s ease-in-out infinite;
+    position: relative;
+    image-rendering: auto;
 }
 
 .ds4.disconnected {
     background: url(disconnected.svg);
-    filter: brightness(0.75) contrast(1.08) saturate(0.85);
 }
 
 .ds4.disconnected div {
     display: none;
 }
 
-/* miękkie, fizyczne kliknięcie — bez drop-shadow/glow */
-.ds4 .trigger,
+/* kliknięcie = tylko fizyczne wciśnięcie, bez glow */
+.ds4 .button,
+.ds4 .face,
 .ds4 .bumper,
-.ds4 .touchpad,
-.ds4 .meta,
+.ds4 .trigger,
+.ds4 .stick,
 .ds4 .back,
 .ds4 .start,
-.ds4 .button,
-.ds4 .stick,
-.ds4 .face {
-    transition:
-      transform 0.10s ease,
-      opacity 0.10s ease,
-      filter 0.10s ease,
-      background-color 0.10s ease;
+.ds4 .touchpad,
+.ds4 .meta {
+    transition: transform 0.08s ease, opacity 0.08s ease, filter 0.08s ease;
+}
+
+.ds4 .button.pressed,
+.ds4 .face.pressed,
+.ds4 .bumper.pressed,
+.ds4 .stick.pressed,
+.ds4 .back.pressed,
+.ds4 .start.pressed,
+.ds4 .trigger.pressed {
+    transform: translateY(2px) scale(0.97);
+    filter: brightness(1.03) saturate(1.08) contrast(1.04);
 }
 
 /* ================= TRIGGERS ================= */
@@ -69,8 +65,6 @@
 
 .ds4 .trigger.pressed {
     opacity: 1;
-    transform: translateY(2px) scale(0.985);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 /* ================= BUMPERS ================= */
@@ -91,8 +85,6 @@
 
 .ds4 .bumper.pressed {
     opacity: 1;
-    transform: translateY(2px) scale(0.985);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 .ds4 .bumper.left {
@@ -105,7 +97,7 @@
 }
 
 .ds4 .bumper.right.pressed {
-    transform: rotateY(180deg) translateY(2px) scale(0.985);
+    transform: rotateY(180deg) translateY(2px) scale(0.97);
 }
 
 /* ================= TOUCHPAD ================= */
@@ -115,12 +107,12 @@
     position: absolute;
     left: 272px;
     top: 122px;
-    border-radius: 18px;
 }
 
 .ds4 .touchpad.pressed {
-    background: rgba(255, 106, 0, 0.14);
-    transform: translateY(2px) scale(0.99);
+    background: rgba(255, 122, 0, 0.18);
+    border-radius: 18px;
+    transform: translateY(2px) scale(0.985);
 }
 
 /* ================= META ================= */
@@ -133,9 +125,9 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(ps4-assets/meta.svg) no-repeat center;
-    transform: translateY(2px) scale(0.94);
-    filter: brightness(0.95) sepia(1) saturate(2.2) hue-rotate(350deg);
+    background: rgba(255, 122, 0, 0.22);
+    border-radius: 50%;
+    transform: translateY(2px) scale(0.96);
 }
 
 /* ================= START / OPTIONS ================= */
@@ -158,8 +150,6 @@
 .ds4 .back.pressed,
 .ds4 .start.pressed {
     opacity: 1;
-    transform: translateY(2px) scale(0.94);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 .ds4 .back {
@@ -189,8 +179,6 @@
 
 .ds4 .button.pressed {
     background-position-y: 55px;
-    transform: translateY(3px) scale(0.92);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 .ds4 .a {
@@ -229,11 +217,6 @@
     background: url(sticks.svg);
     height: 94px;
     width: 94px;
-}
-
-.ds4 .stick.pressed {
-    transform: translateY(2px) scale(0.94);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 .ds4 .stick.pressed.left {
@@ -306,22 +289,10 @@
 
 .ds4 .face.pressed {
     background-position-y: 52px;
-    transform: translateY(3px) scale(0.92);
-    filter: brightness(0.98) contrast(1.08) saturate(1.12);
 }
 
 .ds4.half {
     margin-top: -300px;
-}
-
-/* delikatne „malowanie” korpusu, nie glow */
-@keyframes paintBreath {
-    0%, 100% {
-        filter: brightness(0.94) contrast(1.08) saturate(1.05) hue-rotate(0deg);
-    }
-    50% {
-        filter: brightness(1.02) contrast(1.12) saturate(1.22) hue-rotate(-4deg);
-    }
 }
 
 /*END PS4 Controller Styling*/

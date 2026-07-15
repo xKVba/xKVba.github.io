@@ -14,13 +14,13 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview2"
-     pagecolor="#ffd27a"
-     bordercolor="#08080d"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#ff8a1c"
+     inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="17.408993"
      inkscape:cx="14.188069"
      inkscape:cy="23.292559"
@@ -35,11 +35,11 @@
     <style
        id="style1">
       .cls-1 {
-        fill: #ffd27a;
+        fill: #fff;
       }
 
       .cls-2 {
-        fill: #ffc66d;
+        fill: #efeee5;
       }
     </style>
   </defs>
@@ -49,11 +49,11 @@
        class="cls-1"
        d="M14.2,1.7A12.5,12.5,0,0,1,26.7,14.2V32.5a12.5,12.5,0,0,1-25,0V14.2A12.5,12.5,0,0,1,14.2,1.7m0-1.7A14.25,14.25,0,0,0,0,14.2V32.5a14.2,14.2,0,1,0,28.4,0V14.2A14.25,14.25,0,0,0,14.2,0Z"
        id="path1"
-       style="fill:#ff7a00;fill-opacity:1" />
+       style="fill:#cccccc;fill-opacity:1" />
     <path
        class="cls-2"
        d="M14.2,1.7A12.5,12.5,0,0,0,1.7,14.2V32.5a12.5,12.5,0,0,0,25,0V14.2A12.5,12.5,0,0,0,14.2,1.7Z"
        id="path2"
-       style="fill:#d84d14;fill-opacity:1" />
+       style="fill:#adadad;fill-opacity:1" />
   </g>
 </svg>
